@@ -3,16 +3,16 @@
 #include <string>
 #include <algorithm>
 #include "Common.h"
-#include"pch.h"
+#include "pch.h"
 
-namespace arr {
+namespace Arr {
 
     //!D array functions
     void  initArray(int arr[], int* size) {
         *size = 0;
     }
 
-    void printtArray(std::string ary[], int size) {
+    void printArray(int ary[], int size) {
         std::cout << "Arrays elements: [ " << std::endl;
         for (int i = 0; i < size; i++) {
             std::cout << ary[i];
