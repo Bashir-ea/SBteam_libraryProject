@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="SBteam_libraryProject/SBteam_libraryProject.vcxproj" Id="01548fe1-4017-41ac-86d6-9f975ddd92d6" />
+</Solution>
