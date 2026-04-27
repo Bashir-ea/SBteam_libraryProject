@@ -3,11 +3,14 @@
 #define Files_H
 
 #include"Common.h"
-typedef struct {
-	int id;
-	char name[MAX_STRING_LEN];
 
+typedef struct {
+    int   id;
+    char  name[50];
+    float score;
+    char  category[20];
 } Record;
+
 //Create Binary file
 int createBinaryFile(const char* filename);
 //Write record
