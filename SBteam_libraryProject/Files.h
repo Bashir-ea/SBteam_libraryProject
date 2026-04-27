@@ -6,7 +6,7 @@
 typedef struct {
 	int id;
 	char name[MAX_STRING_LEN];
-	int age;
+
 } Record;
 //Create Binary file
 int createBinaryFile(const char* filename);
