@@ -144,6 +144,7 @@
     <ClInclude Include="Common.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Queue.h" />
+    <ClInclude Include="String.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Arrays.cpp" />
@@ -156,6 +157,7 @@
     </ClCompile>
     <ClCompile Include="Arrays.txt" />
     <ClCompile Include="Queue.c" />
+    <ClCompile Include="String.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
