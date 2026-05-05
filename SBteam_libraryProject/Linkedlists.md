@@ -1,4 +1,3 @@
-Copilot said: Below is documentation for **each function** in
 
 Below is documentation for each function in your code, following the same style as your initArray sample (Function / Problem Understanding with Input, Output, Edge cases). I’m documenting them as they are written (including their current assumptions).
 Function: initList(Node*& head)

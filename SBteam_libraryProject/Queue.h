@@ -1,23 +1,44 @@
 #pragma once 
-#ifndef STACK_H
-#define STACK_H
+#ifndef QUEUE_H
+#define QUEUE_H
 
 typedef struct Node {
-    int data;
-    struct Node* next;
+	int data;
+	struct Node* next;
 } Node;
 
+typedef struct {
+	Node* front;
+	Node* rear;
+} Queue;
 
-typedef struct Stack {
-    Node* top;
-} Stack;
+void initQueue(Queue* Q);
+int enqueue(Queue* Q, int value);
+int dequeue(Queue* Q);
+int front(Queue* Q);
+int rear(Queue* Q);
 
- 
-void initStack(Stack* S);
-int isEmpty(const Stack* S);
-int push(Stack* S, int value);   
-int pop(Stack* S, int* value);   
-void display(const Stack* S);
-void freeStack(Stack* S);          
+
+#endif
+#pragma once 
+#ifndef QUEUE_H
+#define QUEUE_H
+
+typedef struct Node {
+	int data;
+	struct Node* next;
+} Node;
+
+typedef struct {
+	Node* front;
+	Node* rear;
+} Queue;
+
+void initQueue(Queue* Q);
+int enqueue(Queue* Q, int value);
+int dequeue(Queue* Q);
+int front(Queue* Q);
+int rear(Queue* Q);
+
 
 #endif

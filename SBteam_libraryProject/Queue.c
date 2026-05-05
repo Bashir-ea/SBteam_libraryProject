@@ -1,80 +1,57 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct Node {
-    int data;
-    struct Node* next;
-} Node;
+#include "Queue.h"
+#include <stdlib.h>
 
-typedef struct Stack {
-    Node* top;
-} Stack;
-
-void initStack(Stack* S)
-{
-    S->top = NULL;
+void initQueue(Queue* Q) {
+    if (Q == NULL) return;
+    Q->front = NULL;
+    Q->rear = NULL;
 }
 
-int isEmpty(Stack* S)
-{
-    return (S->top == NULL);
-}
+int enqueue(Queue* Q, int value) {
+    if (Q == NULL) return -1;
 
-void push(Stack* S, int value)
-{
     Node* newNode = (Node*)malloc(sizeof(Node));
-    if (newNode == NULL) {
-        printf("Memory allocation failed\n");
-        return;
-    }
+    if (newNode == NULL) return -1;
 
     newNode->data = value;
-    newNode->next = S->top;
-    S->top = newNode;
-}
+    newNode->next = NULL;
 
-int pop(Stack* S)
-{
-    if (isEmpty(S)) {
-        printf("Stack is empty\n");
-        return -1;
+    if (Q->rear == NULL) {          /* queue is empty */
+        Q->front = newNode;
+        Q->rear = newNode;
     }
-
-    Node* temp = S->top;
-    int value = temp->data;
-
-    S->top = temp->next;
-    free(temp);
+    else {
+        Q->rear->next = newNode;
+        Q->rear = newNode;
+    }
 
     return value;
 }
 
-void display(Stack* S)
-{
-    Node* current = S->top;
+int dequeue(Queue* Q) {
+    if (Q == NULL || Q->front == NULL) return -1;
 
-    while (current != NULL) {
-        printf("%d\n", current->data);
-        current = current->next;
+    Node* oldFront = Q->front;
+    int val = oldFront->data;
+
+    Q->front = oldFront->next;
+    if (Q->front == NULL) {         /* became empty */
+        Q->rear = NULL;
     }
+
+    free(oldFront);
+    return val;
 }
 
-int main()
-{
-    Stack S;
-    initStack(&S);
+int front(Queue* Q) {
+    if (Q == NULL || Q->front == NULL) return -1;
+    return Q->front->data;
+}
 
-    push(&S, 10);
-    push(&S, 20);
-    push(&S, 30);
-
-    printf("Stack elements:\n");
-    display(&S);
-
-    printf("Popped: %d\n", pop(&S));
-
-    printf("After pop:\n");
-    display(&S);
-
-    return 0;
+int rear(Queue* Q) {
+    if (Q == NULL || Q->rear == NULL) return -1;
+    return Q->rear->data;
 }

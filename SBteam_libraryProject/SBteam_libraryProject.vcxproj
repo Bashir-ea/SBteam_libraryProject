@@ -162,6 +162,8 @@
     </ClCompile>
     <ClCompile Include="Arrays.md" />
     <ClCompile Include="Queue.c" />
+    <ClCompile Include="Files.md" />
+    <ClCompile Include="Stack.c" />
     <ClCompile Include="String.c" />
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +171,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Linkedlists.md" />
+    <None Include="Queue.md" />
+    <None Include="Stack.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

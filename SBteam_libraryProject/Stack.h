@@ -1,5 +1,4 @@
 #pragma once
-#pragma once 
 #ifndef STACK_H
 #define STACK_H
 
@@ -19,5 +18,6 @@ int push(Stack* S, int value);
 int pop(Stack* S, int* value);
 void display(const Stack* S);
 void freeStack(Stack* S);
+int peek(Stack* S);
 
 #endif

@@ -71,6 +71,12 @@
     <ClCompile Include="Linkedlists.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Stack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Files.md">
+      <Filter>Documentation files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="String.md">
@@ -79,6 +85,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Linkedlists.md">
+      <Filter>Documentation files</Filter>
+    </None>
+    <None Include="Queue.md">
+      <Filter>Documentation files</Filter>
+    </None>
+    <None Include="Stack.md">
       <Filter>Documentation files</Filter>
     </None>
   </ItemGroup>

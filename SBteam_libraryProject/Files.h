@@ -17,5 +17,13 @@ int createBinaryFile(const char* filename);
 int writeRecord(const char* filename, Record* record);
 //Read record
 int readRecord(const char* filename, Record* record, int index);
+//Count records
+int countRecords(const char* filename);
+//Search record by ID
+int searchRecordById(const char* filename, int index, Record* newData);
+//Update record
+int updateRecord(const char* filename, int index, Record* newData);
+//Copy Binary file
+int copyBinaryFile(const char* sourceFilename, const char* destFilename);
 
 #endif // !Files_H
