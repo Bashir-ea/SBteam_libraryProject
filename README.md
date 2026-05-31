@@ -1,7 +1,8 @@
 This is the ASD2 project for year 2026 as freshman.
-The project is about the most important and well known containoers and data structures.
+The project is about the most important and well known containers and data structures.
 Total work: 106/106 functions.
 Contributors:
+  G22/Secation B.
   1. Sekal mohamed el bashir ( all of module 1 )
   2. Saif hadded ( linked lists of module 2 )
   3. Chouaib ghebrid ( queue and stack of module 2 )
