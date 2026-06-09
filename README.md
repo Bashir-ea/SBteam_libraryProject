@@ -10,5 +10,5 @@ Contributors:
   5. Amir lamara ( all of module 3 )
 
 Note:
-  During waork on this project we did out best to not get the code from any AI agent, AI was used in this work for beter understanding and well organized structure; other wise the code is 100% human.
+  During work on this project we did our best to avoid getting the code from any AI agent, AI was used in this work for better understanding and well organizing structure; other wise the code is 100% human.
   Bonus module was not done in this project.
